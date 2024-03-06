@@ -13,7 +13,7 @@ body {
     position: absolute; 
     width: 30px;
     cursor: pointer;
-    right: 1100px; 
+    right: 85%; 
     top: 6px; 
     z-index: 5; 
     }
@@ -28,9 +28,10 @@ body {
         letter-spacing: .15rem;
         transition: color 0.3s;
         position: absolute; 
-        top: 30px; /* Posição no topo */
-        right: 600px; /* Posição na direita */ 
-        cursor: pointer;
+        right: 55%; /* Posicionamento relativo à metade da largura da tela */
+        cursor: pointer;   
+        top: 4.5%;
+        justify-content: center; /* Centraliza verticalmente os itens */
         overflow: hidden;
         z-index: 1; 
     }
@@ -78,8 +79,9 @@ body {
         letter-spacing: .15rem;
         transition: color 0.3s;
         position: absolute; 
-        top: 30px; /* Posição no topo */
-        right: 480px; /* Posição na direita */ 
+        top: 4.5%;
+        justify-content: center; /* Centraliza verticalmente os itens */
+        right: 47%; /* Posição na direita */ 
         cursor: pointer;
         overflow: hidden;
         z-index: 1; 
@@ -116,9 +118,58 @@ body {
     
     .botaohotel:hover:before {
         width: 200%;
+    } 
+    
+    .botaoacomodacao {
+        display: inline-block;
+        padding: .75rem 1.25rem;
+        border-radius: 10rem;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        transition: color 0.3s;
+        position: absolute; 
+        top: 4.5%;
+        justify-content: center; /* Centraliza verticalmente os itens */
+        right: 33%; /* Posição na direita */ 
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 1; 
     }
     
+    .botaoacomodacao:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10rem;
+        z-index: -2;
+    }
     
+    .botaoacomodacao:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #007bff; /* Cor fundo mais escura */
+        transition: width 0.5s; /* Alteração da transição apenas para a largura */
+        border-radius: 10rem;
+        z-index: -1;
+    }
+    
+    .botaoacomodacao:hover {
+        color: rgb(255, 255, 255);
+    }
+    
+    .botaoacomodacao:hover:before {
+        width: 200%;
+    }
     
      
     .botaolazer {
@@ -131,8 +182,9 @@ body {
         letter-spacing: .15rem;
         transition: color 0.3s;
         position: absolute; 
-        top: 30px; /* Posição no topo */
-        right: 360px; /* Posição na direita */ 
+        top: 4.5%;
+        justify-content: center; /* Centraliza verticalmente os itens */
+        right: 25%; /* Posição na direita */ 
         cursor: pointer;
         overflow: hidden;
         z-index: 1; 
@@ -181,8 +233,9 @@ body {
         letter-spacing: .15rem;
         transition: color 0.3s;
         position: absolute; 
-        top: 30px; /* Posição no topo */
-        right: 210px; /* Posição na direita */ 
+        top: 4.5%;
+        justify-content: center; /* Centraliza verticalmente os itens */
+        right: 15%; /* Posição na direita */ 
         cursor: pointer;
         overflow: hidden;
         z-index: 1; 
@@ -231,8 +284,9 @@ body {
         letter-spacing: .15rem;
         transition: color 0.3s;
         position: absolute; 
-        top: 30px; /* Posição no topo */
-        right: 15px; /* Posição na direita */ 
+        top: 4.5%;
+        justify-content: center; /* Centraliza verticalmente os itens */
+        right: 2%; /* Posição na direita */ 
         cursor: pointer;
         overflow: hidden;
         z-index: 1; 
@@ -274,14 +328,14 @@ body {
     .imagem1 {
     position: absolute;
     top: 100px;
-    right: 1px; 
+    right: 0%; 
     cursor: pointer;
     }  
 
     .iconhotel {  
         position: absolute;
         top: -6%; 
-        right: 1077px; 
+        right: 83.5%;
         z-index: 0; 
         cursor: pointer;
     }
@@ -303,7 +357,7 @@ body {
     display: inline-block;
     padding: 10px 20px;
     background-color: #007bff;
-    color: #edecec;
+    color: #000000;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 90px; /* Para alinhar o botão ao final do quadrado */
@@ -313,7 +367,12 @@ body {
     bottom: 70px; /* Posiciona o botão 20px a partir do fundo do quadrado */
     left: 50%; /* Centraliza o botão horizontalmente */
     transform: translateX(-50%); /* Centraliza o botão horizontalmente */
+    }  
+
+    .botaoquadrado:hover {
+        color: #ffffff; /* Cor do texto ao passar o cursor por cima */
     }
+    
 
     .option h2 {  
     margin-top: 10%;
@@ -361,7 +420,7 @@ body {
     
 
     .barra-incentivo {
-        background-color: rgba(0, 123, 255, 0.607);
+        background-color: rgba(0, 123, 255, 0.849);
         color: rgb(0, 0, 0);
         padding: 16px;
         text-align: center;
@@ -432,9 +491,18 @@ content: '';
 .barra-incentivo button:hover::after, .barra-incentivo button:focus::after {
   animation: none;
   display: none;
-}
+} 
+
     .maps {
         position: absolute; 
         top: 1200px; 
-        right: 1px; 
-    }
+        right: 0%; 
+    } 
+
+    .linha-separadora {
+            width: 100%; 
+            height: 13px;
+            background-color: #007bff;
+            margin: 1087px 0 0; /* Ajuste conforme necessário */
+            border: none;
+        }
