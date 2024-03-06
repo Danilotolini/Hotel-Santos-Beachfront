@@ -1,4 +1,4 @@
-body {
+body {  
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     margin: 0;
@@ -329,7 +329,6 @@ body {
     position: absolute;
     top: 100px;
     right: 0%; 
-    cursor: pointer;
     }  
 
     .iconhotel {  
@@ -503,6 +502,36 @@ content: '';
             width: 100%; 
             height: 13px;
             background-color: #007bff;
-            margin: 1087px 0 0; /* Ajuste conforme necessário */
+            margin: 1087px 0 0 ; /* Ajuste conforme necessário */
             border: none;
-        }
+        } 
+        .extra-space {
+            height: 70px; /* Altura desejada para o espaço extra */
+    } 
+    
+    .linhaseparadora2 {
+        width: 100%; 
+        height: 2px;
+        background-color: #007bff;
+        margin: 350px 0 0 ; /* Ajuste conforme necessário */
+        border: none; 
+        z-index: -4;
+    }  
+
+    .partedebaixo { 
+        padding: 20px; /* Espaçamento interno */ 
+        text-align: center; /* Alinhamento de texto centralizado */ 
+        color: black;   
+    }   
+    .telefone { 
+        cursor: pointer;
+    }
+    .telefoneicon{
+    position: absolute; 
+    top: 238.2%; 
+    right: 56%; 
+    z-index: 10;  
+    cursor: pointer;
+    }
+
+    
