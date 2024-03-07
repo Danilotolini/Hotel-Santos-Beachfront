@@ -328,7 +328,8 @@ body {
     .imagem1 {
     position: absolute;
     top: 100px;
-    right: 0%; 
+    right: 0%;  
+    margin: auto; /* Centralizando horizontalmente e alinhando ao final */ 
     }  
 
     .iconhotel {  
@@ -495,7 +496,8 @@ content: '';
     .maps {
         position: absolute; 
         top: 1200px; 
-        right: 0%; 
+        right: 0%;  
+        margin: auto; /* Centralizando horizontalmente e alinhando ao final */  
     } 
 
     .linha-separadora {
