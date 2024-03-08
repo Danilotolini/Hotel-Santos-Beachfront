@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Santos Beira-Mar</title> 
+    <title>Hotel Santos Beachfront - Cadastro</title> 
     <link rel="stylesheet" href="Loginhotel.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
       <!-- FORMULÁRIO DE LOGIN -->
       <div id="login">
         <form method="post" action=""> 
-          <h1>Entrar</h1> 
+          <h1>Login</h1> 
           <p> 
             <label for="email_login">Seu e-mail</label>
             <input id="email_login" name="email_login" required="required" type="text" placeholder="contato@gmail.com"/>
@@ -43,5 +43,35 @@
 
       <!-- FORMULÁRIO DE CADASTRO -->
       <div id="cadastro">
-    </body>
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+           
+          <p> 
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+          </p>
+           
+          <p> 
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@gmail.com"/> 
+          </p>
+           
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Cadastrar"/> 
+          </p>
+           
+          <p class="link">  
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>  
+</body>
 </html>
