@@ -444,7 +444,7 @@ body {
 .barra-incentivo button { 
   min-width: 240px;
   min-height: 30px; 
-  right: 400px; 
+  right: 25%; 
   top: -4%;
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
@@ -530,9 +530,9 @@ content: '';
     }
     .telefoneicon{
     position: absolute; 
-    top: 238.2%; 
-    right: 56%; 
-    z-index: 10;  
+    top: 266%; 
+    right: 56.5%; 
+    z-index: -1;  
     cursor: pointer;
     }
 
