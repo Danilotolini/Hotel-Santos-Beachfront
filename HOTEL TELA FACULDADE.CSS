@@ -1,3 +1,4 @@
+
 body {  
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -530,7 +531,7 @@ content: '';
     }
     .telefoneicon{
     position: absolute; 
-    top: 266%; 
+    top: 260.5%; 
     right: 56.5%; 
     z-index: -1;  
     cursor: pointer;
