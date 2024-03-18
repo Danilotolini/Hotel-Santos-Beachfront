@@ -360,4 +360,22 @@ h1 {
             top: 27%; 
             right: 75.2%; 
             font-size: 18px;
+        } 
+
+        .textocamaking { 
+            position: absolute; 
+            top: 32%; 
+            right: 55%; 
+            font-size: 12; 
+            text-align: left; 
+            width: 40%;
+        } 
+
+        .texto2camaking { 
+            position: absolute; 
+            top: 39%; 
+            right: 55%; 
+            font-size: 12; 
+            text-align: left; 
+            width: 40%;
         }
