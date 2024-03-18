@@ -536,7 +536,7 @@ content: '';
     cursor: pointer;
     }
 
-    @media (max-width: 1366px) {
+    @media (max-width: 1366px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
         
 body {  
     font-family: Arial, sans-serif;
@@ -874,7 +874,7 @@ body {
 
     .iconhotel {  
         position: absolute;
-        top: -6%; 
+        top: -6.8%; 
         right: 83.5%;
         z-index: 0; 
         cursor: pointer;
@@ -904,7 +904,7 @@ body {
     width: 30%; /* Definindo uma largura para o botão */
     margin: auto; /* Centralizando horizontalmente e alinhando ao final */ 
     position: absolute; /* Define o posicionamento absoluto */
-    bottom: 70px; /* Posiciona o botão 20px a partir do fundo do quadrado */
+    bottom: 70px; /* Posiciona o botão 70px a partir do fundo do quadrado */
     left: 50%; /* Centraliza o botão horizontalmente */
     transform: translateX(-50%); /* Centraliza o botão horizontalmente */
     }  
