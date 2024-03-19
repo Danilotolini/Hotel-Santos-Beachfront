@@ -1074,8 +1074,56 @@ content: '';
     top: 260.5%; 
     right: 56.5%; 
     z-index: -1;  
-    cursor: pointer;
+    cursor: pointer;   
     }
-
-    
         }
+
+ @media screen and (max-width: 768px) {  /*RESOLUÇÃO PARA DISPOSITIVOS MOVEIS*/
+          /* Estilos para telas menores, como tablets e smartphones */ 
+        h1  { 
+            width:30px;  
+            position: absolute;
+            cursor: pointer;
+             right: 70%; 
+            top: 6px;  
+            font-size: 18px;
+        } 
+        .imagem1{ 
+            position: absolute; 
+        }
+        .iconhotel {
+            /* Ajustes específicos para telas menores */ 
+            position: absolute;
+            right: 55%; /* Por exemplo, ajuste a posição para uma tela menor */  
+            top: -7%; 
+        }  
+        .botaohome {
+            /* Ajustes específicos para telas menores */ 
+            position: absolute;
+            right: 10%; /* Por exemplo, ajuste a posição para uma tela menor */ 
+            width: 10%;
+        }  
+        .botaocontato {
+            /* Ajustes específicos para telas menores */
+            right: 10%; /* Por exemplo, ajuste a posição para uma tela menor */
+        }  
+
+        .botaoprecheckin {
+            /* Ajustes específicos para telas menores */
+            right: 10%; /* Por exemplo, ajuste a posição para uma tela menor */
+        }  
+
+        .botaoacomodacao {
+            /* Ajustes específicos para telas menores */
+            right: 10%; /* Por exemplo, ajuste a posição para uma tela menor */
+        }  
+        .botaohotel {
+            /* Ajustes específicos para telas menores */
+            right: 10%; /* Por exemplo, ajuste a posição para uma tela menor */
+        }  
+
+        .botaolazer{
+            /* Ajustes específicos para telas menores */
+            right: 10%; /* Por exemplo, ajuste a posição para uma tela menor */
+        } 
+    }
