@@ -338,12 +338,12 @@ h1 {
     }     
     .containerquarto1 { 
         position: absolute; 
-        top: 15%; 
-        right: -50%;
+        top: 20%; 
+        right: -45%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        padding: 20px; 
     }
     
     .descricaoquarto1 {
@@ -366,7 +366,7 @@ h1 {
     }
     
     .imagemquarto1 img {
-        max-width: 100%;
+        max-width: 120%;
         border-radius: 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         background-color: #fff;
@@ -374,8 +374,8 @@ h1 {
     
     .containerquarto2 { 
         position: absolute; 
-        top: 75%; /* Alterado para 50% */
-        left: 9.5%; /* Alinhar a descrição à esquerda */
+        top: 110%; /* Alterado para 50% */
+        left: 5%; /* Alinhar a descrição à esquerda */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -383,7 +383,7 @@ h1 {
     }
     
     .descricaoquarto2 {
-        width: 45%; 
+        width: 50%; 
     }
     
     .descricaoquarto2 h2 {
@@ -397,9 +397,9 @@ h1 {
     }
     
     .imagemquarto2 { 
-        width: 90%; /* Defina a largura da imagem */ 
-        margin-left: 112%; 
-        margin-top: -85%;
+        width: 80%; /* Defina a largura da imagem */ 
+        margin-left: 106%; 
+        margin-top: -60%;
     } 
     
     .imagemquarto2 img { 
@@ -408,4 +408,44 @@ h1 {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
         width: 100%;
         background-color: #fff;
+    } 
+ 
+    .containerquarto3 { 
+        position: absolute; 
+        top: 150%; /* Alterado para 50% */
+        left: 0.5%; /* Alinhar a descrição à esquerda */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
     }
+    
+    .descricaoquarto3 {
+        width: 70%; 
+    }
+    
+    .descricaoquarto3 h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .descricaoquarto3 p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .imagemquarto3 { 
+        width: 70%; /* Defina a largura da imagem */ 
+        margin-left: 5%; 
+        margin-top: -5%;
+    } 
+    
+    .imagemquarto3 img { 
+        max-width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+        width: 100%;
+        background-color: #fff;
+    } 
+
+    
