@@ -326,13 +326,6 @@ h1 {
         width: 200%;
     }
 
-    .imagem1 {
-    position: absolute;
-    top: 100px;
-    right: 0%;  
-    margin: auto; /* Centralizando horizontalmente e alinhando ao final */ 
-    }  
-
     .iconhotel {  
         position: absolute;
         top: -6.8%; 
@@ -343,39 +336,75 @@ h1 {
     .container { 
     max-width: 1200px;  
     }     
-    .imagemquarto1 { 
-        cursor: pointer; 
+    .containerquarto1 { 
         position: absolute; 
-        top: 20%; 
-        right: 5%; 
-        } 
-        .SuiteCasalcomvista { 
-            position: absolute; 
-            top: 20%; 
-            right: 65%; 
-            font-size: 25px;
-        } 
-        .camaking{ 
-            position: absolute; 
-            top: 27%; 
-            right: 75.2%; 
-            font-size: 18px;
-        } 
+        top: 15%; 
+        right: -42%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .descricao {
+        width: 45%; 
+    }
+    
+    .descricao h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .descricao p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .imagemquarto1 {
+        width: 180%; 
+        margin-left: 5%;
+    }
+    
+    .imagemquarto1 img {
+        max-width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }  
 
-        .textocamaking { 
-            position: absolute; 
-            top: 32%; 
-            right: 55%; 
-            font-size: 12; 
-            text-align: left; 
-            width: 40%;
-        } 
+    .containerquarto1 { 
+        position: absolute; 
+        top: 15%; 
+        right: -42%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .descricao {
+        width: 45%; 
+    }
+    
+    .descricao h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .descricao p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
 
-        .texto2camaking { 
-            position: absolute; 
-            top: 39%; 
-            right: 55%; 
-            font-size: 12; 
-            text-align: left; 
-            width: 40%;
-        }
+    .imagemquarto2 { 
+        width: 180%; 
+        margin-left: 5%;
+    } 
+
+    .imagemquarto2 img { 
+        max-width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+    }
