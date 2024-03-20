@@ -328,9 +328,9 @@ h1 {
 
     .iconhotel {  
         position: absolute;
-        top: -6.8%; 
+        top: -4.6%; 
         right: 83.5%;
-        z-index: 0; 
+        z-index: -10; 
         cursor: pointer;
     }
     .container { 
@@ -339,7 +339,7 @@ h1 {
     .containerquarto1 { 
         position: absolute; 
         top: 15%; 
-        right: -42%;
+        right: -50%;
         display: flex;
         justify-content: space-between;
         align-items: center;
