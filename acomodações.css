@@ -448,4 +448,41 @@ h1 {
         background-color: #fff;
     } 
 
+    .containerquarto4 { 
+        position: absolute; 
+        top: 280%; /* Alterado para 50% */
+        left: 0.5%; /* Alinhar a descrição à esquerda */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .descricaoquarto4 {
+        width: 70%; 
+    }
+    
+    .descricaoquarto4 h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .descricaoquarto4 p {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    
+    .imagemquarto4 { 
+        width: 70%; /* Defina a largura da imagem */ 
+        margin-left: 5%; 
+        margin-top: -5%;
+    } 
+    
+    .imagemquarto4 img { 
+        max-width: 100%;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+        width: 100%;
+        background-color: #fff;
+    } 
     
