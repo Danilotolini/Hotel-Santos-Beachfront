@@ -375,7 +375,7 @@ h1 {
     .containerquarto2 { 
         position: absolute; 
         top: 75%; /* Alterado para 50% */
-        right: -46%;
+        left: 9.5%; /* Alinhar a descrição à esquerda */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -397,46 +397,15 @@ h1 {
     }
     
     .imagemquarto2 { 
-        width: 100%; /* Defina a largura da imagem */ 
-        margin-left: 74%; 
-        margin-top: -50%;
+        width: 90%; /* Defina a largura da imagem */ 
+        margin-left: 112%; 
+        margin-top: -85%;
     } 
     
     .imagemquarto2 img { 
         max-width: 100%;
         border-radius: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+        width: 100%;
         background-color: #fff;
     }
-     .containerquarto2 { 
-    position: absolute; 
-    top: 75%; 
-    left: 50%; /* Alinhar a descrição à esquerda */
-    transform: translateX(-50%); /* Centralizar horizontalmente */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.descricaoquarto2 {
-    width: 45%; 
-}
-
-.descricaoquarto2 h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.descricaoquarto2 p {
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
-.imagemquarto2 { 
-    width: 45%; /* Definir a largura da imagem */
-}
-
-.imagemquarto2 img { 
-    width: 100 
-}
