@@ -1072,7 +1072,7 @@ content: '';
     .telefoneicon{
     position: absolute; 
     top: 260.5%; 
-    right: 56.5%; 
+    right: 55%; 
     z-index: -1;  
     cursor: pointer;   
     }
