@@ -494,22 +494,7 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-} 
-
-h1 {
-    background-color: #00000000; 
-    color: rgb(40, 146, 232); 
-    border: black; 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-    font-size: 21px;
-    position: absolute; 
-    width: 30px;
-    cursor: pointer;
-    right: 85%; 
-    top: 6px; 
-    z-index: 5; 
-    }
-    
+}    
     .botaohome {
         display: inline-block;
         padding: .75rem 1.25rem;
@@ -821,12 +806,12 @@ h1 {
         position: absolute;
         top: -6%; 
         right: 83.5%;
-        z-index: -10; 
+        z-index: 0; 
         cursor: pointer;
     }
     .container { 
     max-width: 1200px;  
-    }     
+    }    
     .containerquarto1 { 
         position: absolute; 
         top: 16%; 
