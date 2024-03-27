@@ -335,10 +335,10 @@ h1 {
 
     .iconhotel {  
         position: absolute;
-        top: -6%; 
-        right: 83.5%;
-        z-index: 0; 
-        cursor: pointer;
+        top: -4%; 
+        right: 85%;
+        z-index: 10; 
+        cursor: pointer; 
     }
     .container { 
     max-width: 1200px;  
