@@ -318,7 +318,7 @@ h1 {
     }
     
     .botaoprecheckin:hover {
-        color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255); 
     }
     
     .botaoprecheckin:hover:before {
@@ -327,8 +327,8 @@ h1 {
 
     .iconhotel {  
         position: absolute;
-        top: -6%; 
-        right: 83.5%;
+        top: -4%; 
+        right: 85%;
         z-index: 0; 
         cursor: pointer;
     }
