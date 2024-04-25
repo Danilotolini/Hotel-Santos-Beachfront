@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Santos Beachfront - Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Loginhotel.css">
+</head>
+<body>
+<div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+    
+    <div class="content">      
+      <!-- FORMULÁRIO DE LOGIN -->
+      <script src="login.js"></script>
+      <div id="login">
+        <form method="post" action=""> 
+          <h1>Login</h1> 
+          <p> 
+            <label for="email_login">Seu e-mail</label>
+            <input id="email_login" name="email" required="required" type="text" placeholder="contato@gmail.com"/>
+          </p>
+          <p> 
+            <label for="senha_login">Sua senha</label>
+            <input id="senha_login" name="senha" required="required" type="password" placeholder="1234" /> 
+          </p>
+          
+          <p> 
+            <input type="checkbox" name="manterlogado" id="manterlogado" value="" /> 
+            <label for="manterlogado">Manter-me logado</label>
+          </p>
+          
+          <p> 
+            <input type="submit" value="Entrar" /> 
+          </p>
+          
+          <p class="link">
+            Ainda não tem uma conta?
+            <a href="#paracadastro">Cadastre-se</a>
+          </p>
+        </form>
+      </div>
+
+      <!-- FORMULÁRIO DE CADASTRO -->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1>Cadastro</h1> 
+          <script src="cadastro.js"></script>
+           
+          <p> 
+            <label for="nome_cad">Seu nome</label>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="nome" />
+          </p>
+
+          <p>
+            <label for="cpf_cad">Seu CPF</label>
+            <input id="cpf_cad" name="cpf_cad" required type="text" maxlength="14" placeholder="000.000.000-00">
+          </p>
+           
+          <p> 
+            <label for="email_cad">Seu e-mail</label>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="contato@gmail.com"/> 
+          </p>
+           
+          <p> 
+            <label for="senha_cad">Sua senha</label>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Cadastrar"/> 
+          </p>
+           
+          <p class="link">  
+            Já tem conta?
+            <a href="#paralogin"> Ir para Login </a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
