@@ -74,11 +74,11 @@ body {
     
     .imagem1 { 
         position: flex;  
-        right: 0%;    
+        right: 0%;      
     } 
     
     .imagem1 img {  
-        width: 100%;     
+        width: 100%;      
     } 
 
     .container { 
@@ -870,13 +870,63 @@ transform: scale(0.7);
     } 
 
      @media screen and (max-width: 768px) {  /*RESOLUÇÃO PARA DISPOSITIVOS MOVEIS*/
-    
-    .quadrado { 
-        flex-direction: column-reverse;
-    }   
+        
+        .option h2 {
+            font-size: 26px;
+        }
+
+        .botaoquadrado { 
+            display: inline-block;
+            padding: 13px 20px; 
+            font-size: medium; 
+            margin-bottom: -10%;
+            }  
+        
+            .option p { 
+            font-size: 21px;
+            line-height: 1.1;
+        } 
+
+        .option {
+            width: 350px;
+            height: 370px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.623);
+            padding: 20px;
+            text-align: center;
+            position: absolute; /* Alterado para position: absolute */
+        }
+        
+        .option:nth-child(1) {
+            top: 0; /* Definindo a posição do primeiro quadrado */
+            left: 50%; /* Definindo a posição horizontal do primeiro quadrado */
+            transform: translate(-50%, 210%); /* Centralizando horizontalmente */
+            z-index: 1; /* Ajustando o z-index */
+        }
+        
+        .option:nth-child(2) {
+            top: 50%; /* Definindo a posição vertical do segundo quadrado */
+            left: 50%; /* Definindo a posição horizontal do segundo quadrado */
+            transform: translate(-50%, 90%); /* Centralizando horizontalmente e verticalmente */
+            z-index: 1; /* Ajustando o z-index */
+        }
+        
+        .option:nth-child(3) {
+            top: 100%; /* Definindo a posição vertical do terceiro quadrado */
+            left: 50%; /* Definindo a posição horizontal do terceiro quadrado */
+            transform: translate(-50%, -30%); /* Centralizando horizontalmente e ajustando a posição vertical */
+            z-index: 1; /* Ajustando o z-index */
+        }
+        
+
+    #menu-inicial li button{ 
+    display: none;
+    }
 
     #menu-inicial h1{ 
-    top: 2%; 
+    top: 2.3%;  
+    left: 18%;
     }  
 
     .navbar{  
@@ -884,13 +934,33 @@ transform: scale(0.7);
     border-radius: 0px; 
     margin: 0% 0% 0%;
     border: 1px solid rgba(0, 0, 0, 0);  
-    }
-
+    } 
+    
     #menu-inicial .iconhotel{ 
     top: -3%; 
-    left: -15%; 
+    left: -19%; 
     width: 100%;
+    } 
+    #maps .linha-separadora {
+        margin: 1250px 0 0 ; /* Ajuste conforme necessário */
+    }  
+    .extra-space {
+        height: 5px; /* Altura desejada para o espaço extra */
+     }  
+     .barra-incentivo {
+        background-color: rgba(0, 123, 255, 0); 
     }
-     } 
     
-     
+    .barra-incentivo p {
+    display: none;
+    }
+    
+.barra-incentivo button {  
+    margin-bottom: 195%;
+  min-width: 150px;
+  min-height: 30px; 
+  right: -7%; 
+  font-size: 12px;
+  box-shadow: 1px 1px 8px #71c5ef;
+  }
+}  
