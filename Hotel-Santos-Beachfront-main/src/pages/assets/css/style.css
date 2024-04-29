@@ -122,5 +122,24 @@ body {
 }
 
 .send-button {
+    position: absolute;
+    bottom: 200px;
+    right: 550px;
+}
+
+.send-button button{
+    font-size: 1.4rem;
+    letter-spacing: .15rem;
+    padding: .75rem 1.25rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
     background-color: #4987a7;
+    color: rgb(237, 239, 241);
+}
+
+.send-button a.buttonlink {
+    text-decoration: none;
 }
