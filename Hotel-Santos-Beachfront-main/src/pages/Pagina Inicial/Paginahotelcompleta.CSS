@@ -875,11 +875,15 @@ transform: scale(0.7);
         }   
     } 
 
-     @media screen and (max-width: 414px) {  /*RESOLUÇÃO PARA DISPOSITIVOS MOVEIS*/
+     @media screen and (max-width: 415px) {  /*RESOLUÇÃO PARA DISPOSITIVOS MOVEIS IPHONE XR*/
         
         .option h2 {
             font-size: 26px;
-        }
+        } 
+
+        .quadrado {
+            max-width: 800px;
+        }   
 
         .botaoquadrado { 
             display: inline-block;
@@ -889,13 +893,13 @@ transform: scale(0.7);
             }  
         
             .option p { 
-            font-size: 21px;
+            font-size: 19px;
             line-height: 1.1;
         } 
 
         .option {
-            width: 350px;
-            height: 370px;
+            width: 290px;
+            height: 350px;
             background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.623);
@@ -907,21 +911,21 @@ transform: scale(0.7);
         .option:nth-child(1) {
             top: 0; /* Definindo a posição do primeiro quadrado */
             left: 50%; /* Definindo a posição horizontal do primeiro quadrado */
-            transform: translate(-50%, 210%); /* Centralizando horizontalmente */
+            transform: translate(-45%, 210%); /* Centralizando horizontalmente */
             z-index: 1; /* Ajustando o z-index */
         }
         
         .option:nth-child(2) {
             top: 50%; /* Definindo a posição vertical do segundo quadrado */
             left: 50%; /* Definindo a posição horizontal do segundo quadrado */
-            transform: translate(-50%, 90%); /* Centralizando horizontalmente e verticalmente */
+            transform: translate(-45%, 90%); /* Centralizando horizontalmente e verticalmente */
             z-index: 1; /* Ajustando o z-index */
         }
         
         .option:nth-child(3) {
             top: 100%; /* Definindo a posição vertical do terceiro quadrado */
             left: 50%; /* Definindo a posição horizontal do terceiro quadrado */
-            transform: translate(-50%, -30%); /* Centralizando horizontalmente e ajustando a posição vertical */
+            transform: translate(-45%, -30%); /* Centralizando horizontalmente e ajustando a posição vertical */
             z-index: 1; /* Ajustando o z-index */
         }
         
@@ -931,9 +935,13 @@ transform: scale(0.7);
     }
 
     #menu-inicial h1{ 
-    top: 2.3%;  
-    left: 18%;
+    top: 2%;  
+    left: 16%;   
+    font-size: medium;
     }  
+    .imagem1 img {  
+        width: 108%;      
+    } 
 
     .navbar{  
     background-color: #f0f0f0; 
@@ -944,12 +952,17 @@ transform: scale(0.7);
     
     #menu-inicial .iconhotel{ 
     top: -3%; 
-    left: -19%; 
-    width: 100%;
+    left: -20%; 
+    width: 100%;     
+    pointer-events: none; 
     } 
     #maps .linha-separadora {
-        margin: 1250px 0 0 ; /* Ajuste conforme necessário */
-    }  
+        margin: 1200px 0 0 ; /* Ajuste conforme necessário */ 
+        width: 108%;
+    }   
+    #maps iframe {  
+      width: 108%;
+    } 
     .extra-space {
         height: 5px; /* Altura desejada para o espaço extra */
      }  
@@ -964,11 +977,23 @@ transform: scale(0.7);
     
 .barra-incentivo button {   
  
-    margin-bottom: 195%;
-  min-width: 150px;
-  min-height: 30px; 
-  right: -7%; 
+  margin-bottom: 195%;
+  min-width: 90px;
+  min-height: 20px; 
+  left: 8%;   
   font-size: 12px;
   box-shadow: 1px 1px 8px #71c5ef;
-  }
+  } 
+  .barra-incentivo button::before {
+  min-width: calc(140px + 12px);
+  min-height: calc(20px + 12px);
+  border: 2px solid #00c8ff;
+} 
+.partedebaixo { 
+    padding: 20px; /* Espaçamento interno */ 
+    text-align: center; /* Alinhamento de texto centralizado */  
+    position: flex;
+    margin-left: 10%;
+    color: black;   
+}   
 }  
