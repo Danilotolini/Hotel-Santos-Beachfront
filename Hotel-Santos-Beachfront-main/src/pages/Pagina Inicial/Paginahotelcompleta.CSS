@@ -875,8 +875,7 @@ transform: scale(0.7);
         }   
     } 
 
-     @media screen and (max-width: 415px) {  /*RESOLUÇÃO PARA DISPOSITIVOS MOVEIS IPHONE XR*/
-        
+     @media screen and (max-width: 428px) {  /*RESOLUÇÃO PARA DISPOSITIVOS MOVEIS IPHONE 13 PRO MAX*/     
         .option h2 {
             font-size: 26px;
         } 
@@ -911,21 +910,21 @@ transform: scale(0.7);
         .option:nth-child(1) {
             top: 0; /* Definindo a posição do primeiro quadrado */
             left: 50%; /* Definindo a posição horizontal do primeiro quadrado */
-            transform: translate(-45%, 210%); /* Centralizando horizontalmente */
+            transform: translate(-50%, 210%); /* Centralizando horizontalmente */
             z-index: 1; /* Ajustando o z-index */
         }
         
         .option:nth-child(2) {
             top: 50%; /* Definindo a posição vertical do segundo quadrado */
             left: 50%; /* Definindo a posição horizontal do segundo quadrado */
-            transform: translate(-45%, 90%); /* Centralizando horizontalmente e verticalmente */
+            transform: translate(-50%, 90%); /* Centralizando horizontalmente e verticalmente */
             z-index: 1; /* Ajustando o z-index */
         }
         
         .option:nth-child(3) {
             top: 100%; /* Definindo a posição vertical do terceiro quadrado */
             left: 50%; /* Definindo a posição horizontal do terceiro quadrado */
-            transform: translate(-45%, -30%); /* Centralizando horizontalmente e ajustando a posição vertical */
+            transform: translate(-50%, -30%); /* Centralizando horizontalmente e ajustando a posição vertical */
             z-index: 1; /* Ajustando o z-index */
         }
         
@@ -935,14 +934,10 @@ transform: scale(0.7);
     }
 
     #menu-inicial h1{ 
-    top: 2%;  
+    top: 3%;  
     left: 16%;   
     font-size: medium;
     }  
-    .imagem1 img {  
-        width: 108%;      
-    } 
-
     .navbar{  
     background-color: #f0f0f0; 
     border-radius: 0px; 
@@ -951,7 +946,7 @@ transform: scale(0.7);
     } 
     
     #menu-inicial .iconhotel{ 
-    top: -3%; 
+    top: -2.5%; 
     left: -20%; 
     width: 100%;     
     pointer-events: none; 
@@ -960,40 +955,29 @@ transform: scale(0.7);
         margin: 1200px 0 0 ; /* Ajuste conforme necessário */ 
         width: 108%;
     }   
-    #maps iframe {  
-      width: 108%;
-    } 
     .extra-space {
         height: 5px; /* Altura desejada para o espaço extra */
      }  
      .barra-incentivo { 
         position: absolute;
-        background-color: rgba(0, 123, 255, 0); 
+        background-color: rgba(0, 123, 255, 0);  
     }
-    
-    .barra-incentivo p {
+    .barra-incentivo p { 
     display: none;
     }
     
-.barra-incentivo button {   
- 
-  margin-bottom: 195%;
-  min-width: 90px;
-  min-height: 20px; 
-  left: 8%;   
-  font-size: 12px;
-  box-shadow: 1px 1px 8px #71c5ef;
-  } 
+    .barra-incentivo button {   
+        margin-bottom: 153%;
+        min-width: 70px;
+        min-height: 20px; 
+        left: 4%;    
+        font-size: 12px;
+        box-shadow: 1px 1px 8px #71c5ef; 
+        z-index: 10;
+        } 
   .barra-incentivo button::before {
-  min-width: calc(140px + 12px);
+  min-width: calc(150px + 12px);
   min-height: calc(20px + 12px);
   border: 2px solid #00c8ff;
 } 
-.partedebaixo { 
-    padding: 20px; /* Espaçamento interno */ 
-    text-align: center; /* Alinhamento de texto centralizado */  
-    position: flex;
-    margin-left: 10%;
-    color: black;   
 }   
-}  
