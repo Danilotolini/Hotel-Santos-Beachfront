@@ -1,144 +1,191 @@
-body {  
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
 }
-#menu-inicial h1 { 
-    color: #3B82F6;  
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-    font-size: 21px;
-    position: absolute; 
-    width: 30px;
-    cursor: pointer;
-    right: 85%; 
-    top: 1.5%; 
-    z-index: 5;  
-    }
-    #menu-inicial .iconhotel{  
-    position: absolute;
-    top: -3%; 
-    right: 85%;
-    z-index: 10; 
-    cursor: pointer; 
-    }
-    .navbar{
-        background-color: #f7f0d3;
-        border-radius: 10px;
-        width: auto;
-        margin: 0.8% 3% 3%;
-        height: 100px;
-        border: 1px solid black; 
-    }
-    
-    #menu-inicial{
-        display: flex;
-        list-style-type: none;
-        padding: 0%;
-        margin-left: 20%;  
-        }
-        
-        #menu-inicial li{  
-        top: 4.5%;
-        display: inline-block;
-        text-transform: uppercase;
-        justify-content: space-around;
-        padding: 20px;
-        }
-        #menu-inicial li button{
-            font-size: 1rem;
-            letter-spacing: .15rem;
-            padding: .75rem 1.25rem;
-            background-color: rgb(255, 255, 255);
-            border-radius: 10rem;
-            cursor: pointer;
-            overflow: hidden;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease;
-        }
-        #menu-inicial li button:hover {
-            background-color: #71c4ef; /* Cor fundo mais escura */
-            color: rgb(255, 255, 255);
-        }
-        
-        #menu-inicial li button::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0%;
-            height: 100%;
-            background-color: #71c4ef; /* Cor fundo mais escura */
-            transition: width 0.5s; /* Alteração da transição apenas para a largura */
-        }
-.grupo-containers{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px; 
-    display: block;
-    letter-spacing: 0.2px;
-    margin: 1% 5% 5%;
+#menu-inicial h1 {
+  color: #3b82f6;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 21px;
+  position: absolute;
+  width: 30px;
+  cursor: pointer;
+  right: 85%;
+  top: 1.5%;
+  z-index: 5;
+}
+#menu-inicial .iconhotel {
+  position: absolute;
+  top: -3%;
+  right: 85%;
+  z-index: 10;
+  cursor: pointer;
+}
+.navbar {
+  background-color: #f7f0d3;
+  border-radius: 10px;
+  width: auto;
+  margin: 0.8% 3% 3%;
+  height: 100px;
+  border: 1px solid black;
+}
+
+#menu-inicial {
+  display: flex;
+  list-style-type: none;
+  padding: 0%;
+  margin-left: 20%;
+}
+
+#menu-inicial li {
+  top: 4.5%;
+  display: inline-block;
+  text-transform: uppercase;
+  justify-content: space-around;
+  padding: 20px;
+}
+#menu-inicial li button {
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  padding: 0.75rem 1.25rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10rem;
+  cursor: pointer;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+#menu-inicial li button:hover {
+  background-color: #71c4ef; /* Cor fundo mais escura */
+  color: rgb(255, 255, 255);
+}
+
+#menu-inicial li button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #71c4ef; /* Cor fundo mais escura */
+  transition: width 0.5s; /* Alteração da transição apenas para a largura */
+}
+.grupo-containers {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  display: block;
+  letter-spacing: 0.2px;
+  margin: 1% 5% 5%;
 }
 .descricao {
-    width: 100%; /* troquei 50 por 100 */
-    font-size: 20px;
-    margin-bottom: 10px;
-    }
+  width: 100%; /* troquei 50 por 100 */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
 .descricao h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-} 
-    .containerhotel { 
-        position: relative;
-        display: flex;
-        flex-direction: column; /*acrecentei */
-        justify-content: center;
-        align-items: center;
-        padding: 20px; 
-        border: 2px solid black;
-        /* justify-content: space-around; tirei isso */
-        border-radius: 25px;
-    } 
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.containerhotel {
+  position: relative;
+  display: flex;
+  flex-direction: column; /*acrecentei */
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid black;
+  /* justify-content: space-around; tirei isso */
+  border-radius: 25px;
+}
 
-    .containerhotel:not(:first-child){
-        margin-top: 5%;
-    }
-     /*.imagemhotel { 
+.containerhotel:not(:first-child) {
+  margin-top: 5%;
+}
+/*.imagemhotel { 
         margin-right: 10px; tirei tbm */
-    
-    .imagemhotel img{
-        border-radius: 20px;
-        max-width: 100%; /* troquei width por max width (700px para 100%) */
-        height: auto; /* troquei 500px para auto */
-    }
-    @media screen and (max-width: 768px) 
-        #menu-inicial h1 {
-            right: 80%; /* Ajusta a posição do menu */
-        }
-    
-        #menu-inicial .iconhotel {
-            right: 80%; /* Ajusta a posição do ícone */
-        }
-    
-        .navbar {
-            height: 80px; /* Ajusta a altura da barra de navegação */
-        }
-    
-        #menu-inicial {
-            margin-left: 5%; /* Ajusta a margem esquerda do menu */
-        }
-    
-        .grupo-containers {
-            flex-direction: column; /* Empilha os contêineres verticalmente */
-            align-items: center; /* Centraliza horizontalmente */
-        }
-    
-        .descricao {
-            width: 90%; /* Ajusta a largura da descrição */
-        }
-    
+
+.imagemhotel img {
+  border-radius: 20px;
+  max-width: 100%; /* troquei width por max width (700px para 100%) */
+  height: auto; /* troquei 500px para auto */
+}
+@media screen and (max-width: 768px) #menu-inicial h1 {
+  right: 80%; /* Ajusta a posição do menu */
+}
+
+#menu-inicial .iconhotel {
+  right: 80%; /* Ajusta a posição do ícone */
+}
+
+.navbar {
+  height: 80px; /* Ajusta a altura da barra de navegação */
+}
+
+#menu-inicial {
+  margin-left: 5%; /* Ajusta a margem esquerda do menu */
+}
+
+.grupo-containers {
+  flex-direction: column; /* Empilha os contêineres verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+}
+
+.descricao {
+  width: 90%; /* Ajusta a largura da descrição */
+}
+
+.containerhotel .imagemhotel img {
+  width: 100%; /* Ajusta a largura da imagem */
+}
+@media screen and (max-width: 768px) {
+  #menu-inicial h1 {
+    right: 5%;
+    top: 1%;
+    font-size: 18px;
+  }
+
+  #menu-inicial .iconhotel {
+    right: 5%;
+    top: -6%;
+  }
+
+  .navbar {
+    height: auto; /* Alterado para ajustar automaticamente a altura */
+    margin: 5px;
+  }
+
+  #menu-inicial {
+    margin-left: 5%;
+    flex-wrap: wrap; /* Para garantir que os itens do menu se ajustem à largura */
+  }
+
+  #menu-inicial li {
+    display: block; /* Alterado para empilhar os itens do menu verticalmente */
+    margin-bottom: 10px; /* Adicionado para espaço entre os itens */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .grupo-containers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descricao {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .containerhotel .imagemhotel img {
+    width: 90%;
+    margin: 5px 0;
+  }
+}
+
         .containerhotel .imagemhotel img {
             width: 100%; /* Ajusta a largura da imagem */
         }
