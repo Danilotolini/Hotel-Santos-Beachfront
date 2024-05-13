@@ -35,6 +35,7 @@ app.post('/tbl_reserva', (req, res) => {
     }
   });
 });
+//connection.end();
 //servidor
 const PORT = 3000;
 app.listen(PORT, () => {
