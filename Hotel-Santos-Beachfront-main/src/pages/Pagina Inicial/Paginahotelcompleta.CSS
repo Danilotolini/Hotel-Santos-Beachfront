@@ -947,7 +947,7 @@ text-align: center; /* Alinhamento de texto centralizado */
   border: 2px solid #00c8ff;
 } 
 }          
-        @media screen and (max-width: 834px) { 
+        @media screen and (max-width: 835px) { 
             #menu-inicial {
             margin-left: 16%;  
             padding: 5%;
@@ -956,13 +956,14 @@ text-align: center; /* Alinhamento de texto centralizado */
             #menu-inicial h1 { 
                 font-size: 14px;
                 right: 84%; 
-                top: 4%; 
+                top: 1%;  
+                font-size: larger;
                 }   
         
         #menu-inicial .iconhotel {  
-        top: -3.5%; 
+        top: -2%; 
         right: 82%; 
-        transform: scale(0.7);  
+        transform: scale(0.8);  
         }
         
             #menu-inicial li{
@@ -973,14 +974,13 @@ text-align: center; /* Alinhamento de texto centralizado */
             font-size: 10px;
             }    
             .botaoquadrado { 
-                padding: 6px 7px;  
-                font-size: small;
-                bottom: 70px; /* Posiciona o botão 20px a partir do fundo do quadrado */
-                left: 50%; /* Centraliza o botão horizontalmente */
-                transform: translateX(-50%); /* Centraliza o botão horizontalmente */
-                } 
+                display: inline-block;
+                padding: 15px 25px; 
+                font-size: 22px; 
+                margin-bottom: -2%;
+                }  
                 .barra-incentivo button { 
-                    margin-bottom: 200px;
+                    margin-bottom: 121%;
                 }   
             }  
  @media screen and (max-width: 800px) {
@@ -990,14 +990,25 @@ text-align: center; /* Alinhamento de texto centralizado */
         font-size: 20px;
         }   
         #menu-inicial .iconhotel{ 
-            top: -2.5%; 
-            left: -15%;
-            pointer-events: none;  
+            top: -2%; 
+            left: -4%;
+            pointer-events: none;   
+            transform: scale(0.9);
             }  
             .barra-incentivo button {   
-                margin-bottom: 137%;
+                margin-bottom: 137%; 
                 } 
-            }   
+            }    
+
+    @media screen and (max-width: 768px) { 
+        #menu-inicial .iconhotel { 
+            top: -2.7%; 
+        } 
+        .barra-incentivo button { 
+            margin-bottom: 109%; 
+            left: -6%;
+        }
+    }
      @media screen and (max-width: 428px) {  /*RESOLUÇÃO PARA DISPOSITIVOS MOVEIS IPHONE 13 PRO MAX*/     
         
         .option h2 {
@@ -1043,7 +1054,8 @@ text-align: center; /* Alinhamento de texto centralizado */
     }  
     #menu-inicial .iconhotel{ 
     top: -2.5%; 
-    left: -9%; 
+    left: -9%;  
+    transform: scale(0.7);
     } 
     #maps .linha-separadora {
         margin: 1200px 0 0 ; /* Ajuste conforme necessário */ 
@@ -1066,4 +1078,111 @@ text-align: center; /* Alinhamento de texto centralizado */
   min-width: calc(150px + 12px);
   min-height: calc(20px + 12px);
 } 
+}    
+@media  screen and (max-width: 391px) { 
+    #menu-inicial .iconhotel{ 
+        top: -3%; 
+    } 
+    #menu-inicial h1{ 
+        top: 3.2%; 
+        left: 18%;
+    } 
+    .barra-incentivo button { 
+        margin-bottom: 147%; 
+        min-width: 50px;
+        min-height: 20px; 
+        left: 5%;    
+        font-size: 11px;
+    } 
+    .barra-incentivo button::before { 
+        min-width: calc(140px + 12px);
+        min-height: calc(20px + 12px);
+    }
+} 
+@media  screen and (max-width: 361px) {    
+    
+    .botaoquadrado { 
+        display: inline-block;
+        padding: 12px 18px; 
+        font-size: medium; 
+        margin-bottom: -10%;
+        }   
+
+        .option h2 { 
+           font-size: 25px;
+        }
+    
+        .option p { 
+        font-size: 16px;
+        line-height: 1.1;
+    } 
+
+    .option {
+        width: 290px;
+        height: 350px;
+    }
+    #menu-incial .iconhotel { 
+        top: -3%; 
+        transform: scale(0.6);
+   }  
+   #menu-incial h1 { 
+    top: -2%; 
+    font-size: small;
+   }
+   .barra-incentivo button { 
+    margin-bottom: 173%; 
+    min-width: 40px;
+    min-height: 20px; 
+    left: 5%;    
+    font-size: 9px;
+   } 
+   .barra-incentivo button::before { 
+    min-width: calc(110px + 12px);
+    min-height: calc(20px + 12px);
+   }
+} 
+@media  screen and (max-width: 320px) {     
+    .botaoquadrado { 
+        display: inline-block;
+        padding: 10px 1px; 
+        font-size: small; 
+        margin-bottom: -10%;
+        }   
+
+        .option h2 { 
+           font-size: 23px;
+        }
+    
+        .option p { 
+        font-size: 15px;
+        line-height: 1.1;
+    } 
+
+    .option {
+        width: 260px;
+        height: 300px;
+    }
+    #menu-inicial .iconhotel { 
+        top: -6%; 
+        transform: scale(0.7);
+   }  
+   #menu-inicial h1 { 
+    top: 6%;  
+    left: 22%;
+    font-size: small;
+   }
+   .barra-incentivo button { 
+    margin-bottom: 116%; 
+    min-width: 30px;
+    min-height: 20px; 
+    left: 5%;    
+    font-size: 7px;
+   } 
+   .barra-incentivo button::before { 
+    min-width: calc(100px + 12px);
+    min-height: calc(20px + 12px);
+   } 
+   #maps .linha-separadora {
+    margin: 1030px 0 0 ; /* Ajuste conforme necessário */ 
 }   
+}
