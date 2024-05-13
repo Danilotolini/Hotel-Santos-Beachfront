@@ -25,7 +25,7 @@ connection.connect((err) => {
 
 app.post('/tbl_reserva', (req, res) => {
   const {nome, cpf,  email, telefone, data_nasc, cep, rua, bairro} = req.body;
-  const query = `INSERT INTO tbl_reserva (nome, cpf,  email, telefone, data_nasc, cep, rua, bairro) VALUES (?, ?)`;
+  const query = `INSERT INTO tbl_reserva (nome, cpf,  email, telefone, data_nasc, cep, rua, bairro) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
   connection.query(query, [nome, cpf,  email, telefone, data_nasc, cep, rua, bairro], (err, result) => {
     if (err) {
       console.error('Erro ao fazer reserva:', err);
