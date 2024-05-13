@@ -946,8 +946,8 @@ text-align: center; /* Alinhamento de texto centralizado */
   min-height: calc(30px + 12px);
   border: 2px solid #00c8ff;
 } 
-}         
-        @media screen and (max-width: 829.60px) { 
+}          
+        @media screen and (max-width: 834px) { 
             #menu-inicial {
             margin-left: 16%;  
             padding: 5%;
@@ -978,8 +978,11 @@ text-align: center; /* Alinhamento de texto centralizado */
                 bottom: 70px; /* Posiciona o botão 20px a partir do fundo do quadrado */
                 left: 50%; /* Centraliza o botão horizontalmente */
                 transform: translateX(-50%); /* Centraliza o botão horizontalmente */
+                } 
+                .barra-incentivo button { 
+                    margin-bottom: 200px;
                 }   
-            } 
+            }  
  @media screen and (max-width: 800px) {
     #menu-inicial h1{ 
         top: 1%;  
