@@ -1109,7 +1109,7 @@ text-align: center; /* Alinhamento de texto centralizado */
         min-height: calc(20px + 12px);
     }
 } 
-@media  screen and (max-width: 361px) {    
+@media  screen and (max-width: 360px) {    
     
     .botaoquadrado { 
         display: inline-block;
@@ -1195,4 +1195,4 @@ text-align: center; /* Alinhamento de texto centralizado */
    #maps .linha-separadora {
     margin: 1030px 0 0 ; /* Ajuste conforme necessário */ 
 }   
-}
+} 
