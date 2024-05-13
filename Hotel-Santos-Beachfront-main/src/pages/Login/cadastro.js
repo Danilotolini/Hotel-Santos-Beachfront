@@ -23,6 +23,16 @@ connection.connect((err) => {
   console.log('Conexão com o banco de dados MySQL estabelecida com sucesso.');
 });
 
+function verificarUsuarioCadastrado(email) {
+  let usuariosCadastrados = SELECT * FROM tbl_cadastro
+    for (let i = 0; i < usuariosCadastrados.length; i++) {
+        if (usuariosCadastrados[i].email === email) {
+            return true;
+        }
+    }
+    return false;
+}
+
 app.post('/tbl_usuarios', (req, res) => {
   const { cpf, nome, email, senha} = req.body;
   const query = `INSERT INTO tbl_usuarios (CPF, nome, email, senha) VALUES (?, ?)`;
