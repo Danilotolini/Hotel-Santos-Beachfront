@@ -1078,8 +1078,18 @@ text-align: center; /* Alinhamento de texto centralizado */
   min-width: calc(150px + 12px);
   min-height: calc(20px + 12px);
 } 
-}    
-@media  screen and (max-width: 391px) { 
+}       
+@media screen and (max-width: 412px) { 
+    .barra-incentivo button { 
+        margin-bottom: 178%;
+    }  
+    }
+@media screen and (max-width: 393px) { 
+.barra-incentivo button { 
+    margin-bottom: 170%;
+}  
+}
+@media screen and (max-width: 391px) { 
     #menu-inicial .iconhotel{ 
         top: -3%; 
     } 
@@ -1137,7 +1147,7 @@ text-align: center; /* Alinhamento de texto centralizado */
     font-size: 9px;
    } 
    .barra-incentivo button::before { 
-    min-width: calc(110px + 12px);
+    min-width: calc(120px + 12px);
     min-height: calc(20px + 12px);
    }
 } 
