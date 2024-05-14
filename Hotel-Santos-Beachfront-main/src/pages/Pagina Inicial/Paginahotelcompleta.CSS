@@ -70,8 +70,62 @@ body {
         height: 100%;
         background-color: #71c4ef; /* Cor fundo mais escura */
         transition: width 0.5s; /* Alteração da transição apenas para a largura */
+    } 
+
+    #menu-mobile { 
+        background-color: #0000008f;  
+        backdrop-filter: blur(5px);
+        position: absolute; 
+        top: 87px; 
+        left: 0; 
+        width: 100%; 
+        height: 100%;    
+        z-index: 100; 
+        } 
+    #menu-mobile li button {  
+        color: #f0f0f0;
+        background: #00000000;   
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        padding: .75rem 1.25rem;
+        font-size: 16pt; 
+
     }
-    
+    #menu-mobile li a{  
+        background-color: #00000000;
+        color: #ffffff; 
+        text-decoration: none; 
+        display: block;  
+        padding:  20px 30px;
+    } 
+    #menu-mobile li a:hover{ 
+        background-color: #00000086;
+    } 
+
+    #btn-menu { 
+        margin-top: 2%;
+        margin-left: 90%;
+        width: 70px; 
+        height: 70px; 
+        border: 4px solid #ccc; 
+        background: transparent;  
+        border-radius: 20px;
+        z-index: 1000; 
+        cursor: pointer;
+    } 
+    .linha { 
+        width: 40px; 
+        height: 4px; 
+        background-color: #ccc;
+        display: block; 
+        margin: 7px auto; 
+        position: relative; 
+        transform-origin: center;
+    } 
+    #btn-meu.ativar .linha:nth-child(1){ 
+         transform: translateY(36px) rotate(-45deg);  
+         background-color: red;   
+        }
     .imagem1 { 
         position: flex;  
         right: 0%;      
@@ -169,7 +223,7 @@ body {
         bottom: 0;
         left: 0;
         width: 100%;
-        z-index: 2; 
+        z-index: 0; 
         display: flex; /* Adicionado */
         align-items: center; /* Adicionado */ 
         justify-content: center; /* Centraliza os elementos horizontalmente */
@@ -308,12 +362,18 @@ background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100
         
     #menu-inicial {
         margin-left: 19.5%;  
-         }
+         }  
 } 
-    @media (max-width: 1490.60px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1490.60 */
+    @media (max-width: 1496px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1490.60 */
         
         #menu-inicial {
             margin-left: 17%;  
+             }  
+             #menu-inicial h1{ 
+                top: 2%;
+             } 
+             #menu-inicial .iconhotel{ 
+                top: -2.5%;
              }
  }
 
@@ -945,8 +1005,8 @@ text-align: center; /* Alinhamento de texto centralizado */
   min-width: calc(220px + 12px);
   min-height: calc(30px + 12px);
   border: 2px solid #00c8ff;
-} 
-}          
+}  
+}           
         @media screen and (max-width: 835px) { 
             #menu-inicial {
             margin-left: 16%;  
