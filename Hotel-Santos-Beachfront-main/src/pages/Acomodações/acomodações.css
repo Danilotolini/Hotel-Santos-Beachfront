@@ -3,75 +3,154 @@ body {
     background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-}
-#menu-inicial h1 { 
-color: #3B82F6;  
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-font-size: 21px;
-position: absolute; 
-width: 30px;
-cursor: pointer;
-right: 85%; 
-top: 0.5%; 
-z-index: 5; 
-}
-.iconhotel {  
-position: absolute;
-top: -2%; 
-right: 85%;
-z-index: 10; 
-cursor: pointer; 
-}
-.navbar{
-    background-color: #f7f0d3;
-    border-radius: 10px;
-    width: auto;
-    margin: 0.8% 3% 3%;
-    height: 100px;
-    border: 1px solid black;
-}
-
-#menu-inicial{
-display: flex;
-list-style-type: none;
-padding: 0%;
-margin-left: 35%;
-}
-
-#menu-inicial li{
-top: 4.5%;
-display: inline-block;
-text-transform: uppercase;
-justify-content: space-around;
-padding: 20px;
-}
-#menu-inicial li button{
-    font-size: 1rem;
-    letter-spacing: .15rem;
-    padding: .75rem 1.25rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 10rem;
+  }
+  #menu-inicial h1 { 
+    color: #3B82F6;  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-size: 21px;
+    position: absolute; 
+    width: 30px;
     cursor: pointer;
-    overflow: hidden;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
-}
-#menu-inicial li button:hover {
-    background-color: #71c4ef; /* Cor fundo mais escura */
-    color: rgb(255, 255, 255);
-}
-
-#menu-inicial li button::after {
-    content: '';
+    right: 85%; 
+    top: 1.2%; 
+    z-index: 5; 
+    }
+  #menu-inicial .iconhotel {  
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background-color: #71c4ef; /* Cor fundo mais escura */
-    transition: width 0.5s; /* Alteração da transição apenas para a largura */
-}
-
+    top: -2%; 
+    right: 85%;
+    z-index: 10; 
+    cursor: pointer; 
+    }
+    .navbar{
+        background-color: #f7f0d3;
+        border-radius: 10px;
+        width: auto;
+        margin: 0.8% 3% 3%;
+        height: 100px;
+        border: 1px solid black;
+    }
+    
+    #menu-inicial{
+    display: flex;
+    list-style-type: none;
+    padding: 0%;
+    margin-left: 35%;
+    }
+    
+    #menu-inicial li{
+    top: 4.5%;
+    display: inline-block;
+    text-transform: uppercase;
+    justify-content: space-around;
+    padding: 20px;
+    }
+    #menu-inicial li button{
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        padding: .75rem 1.25rem;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10rem;
+        cursor: pointer;
+        overflow: hidden;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease;
+    }
+    #menu-inicial li button:hover {
+        background-color: #71c4ef; /* Cor fundo mais escura */
+        color: rgb(255, 255, 255);
+    }
+    
+    #menu-inicial li button::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #71c4ef; /* Cor fundo mais escura */
+        transition: width 0.5s; /* Alteração da transição apenas para a largura */
+    } 
+  
+    #menu-mobile {  
+        list-style-type: none;
+        background: #0000008f;  
+        backdrop-filter: blur(5px);
+        position: absolute; 
+        top: 87px; 
+        left: 0; 
+        width: 97.8%; 
+        height: 0;    
+        z-index: 100;  
+        visibility: hidden; 
+        transition: 0.5s; 
+        overflow: hidden;
+        } 
+    #menu-mobile li button {  
+        color: #f0f0f0; 
+        background: transparent;  
+        font-size: 1rem; 
+        border: transparent;  
+        letter-spacing: .15rem;
+        padding: .75rem 1.25rem;
+        font-size: 16pt;  
+        cursor: pointer;
+  
+    }
+    #menu-mobile li a{  
+        background-color: #00000000;
+        color: #ffffff; 
+        text-decoration: none; 
+        display: block;  
+        padding:  20px 30px;
+    } 
+    #menu-mobile li a:hover{ 
+        background-color: #00000086;
+    } 
+  
+    #btn-menu { 
+        margin-top: 2%;
+        margin-left: 90%;
+        width: 70px; 
+        height: 70px; 
+        border: 3px solid #ccc; 
+        background: transparent;  
+        border-radius: 20px;
+        z-index: 100; 
+        cursor: pointer;    
+        display: none;
+    } 
+    .linha { 
+        width: 40px; 
+        height: 4px; 
+        background-color: #ccc;
+        display: block; 
+        margin: 7px auto; 
+        position: relative; 
+        transform-origin: center;  
+        transition: 0.2s;
+        cursor: pointer;  
+        z-index: 100;
+    }  
+    #btn-menu.ativar { 
+        border: 3px solid red;
+    } 
+  
+    button.ativar .linha:nth-child(1){ 
+    transform: translateY(12px) rotate(-45deg);  
+    background-color: red;   
+        } 
+     button.ativar .linha:nth-child(3){ 
+     transform: translateY(-10px) rotate(45deg);  
+    background-color: red;   
+    } 
+    button.ativar .linha:nth-child(2){ 
+        width: 0;
+    } 
+    #menu-mobile.abrir { 
+        visibility: visible; 
+        height: calc(100vh - 77px);
+    }
 .grupo-containers{
     position: flex;
     justify-content: space-between;
@@ -421,4 +500,455 @@ padding: 20px;
     }
     #radio28:checked ~ .navigation-auto .auto-btn28 {
         background-color: white;
-    }
+    } 
+    @media (max-width: 1840px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1840 */
+        
+        #menu-inicial {
+            margin-left: 32%;  
+             }
+      } 
+      @media (max-width: 1759px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+        
+      #menu-inicial {
+        margin-left: 30%;  
+         }
+      }  
+      @media (max-width: 1709px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+        
+      #menu-inicial {
+        margin-left: 26%;  
+         }
+      }  
+      @media (max-width: 1618px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+        
+      #menu-inicial {
+        margin-left: 22%;  
+         }
+      }  
+      @media (max-width: 1536px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+        
+      #menu-inicial {
+        margin-left: 19.5%;  
+         }  
+      } 
+      @media (max-width: 1496px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1490.60 */
+        
+        #menu-inicial {
+            margin-left: 17%;  
+             }  
+             #menu-inicial h1{ 
+                top: 2%;
+             } 
+             #menu-inicial .iconhotel{ 
+                top: -2.5%;
+             }
+      }
+      
+      @media (max-width: 1472px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+        
+            #menu-inicial {
+                margin-left: 18%;
+            }
+      } 
+      
+      @media (max-width: 1454.40px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+        
+        #menu-inicial {
+            margin-left: 17%;
+        } 
+         } 
+          
+      @media (max-width: 1437.60px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+        
+            #menu-inicial {
+                margin-left: 16%;
+            } 
+             } 
+      @media (max-width: 1420px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+        
+      #menu-inicial { 
+      margin-left: 15%;
+      } 
+        } 
+      @media (max-width: 1404px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+        
+      #menu-inicial {
+      margin-left: 16%;
+      }  
+      
+      #menu-inicial li{
+        padding: 18px;
+        }
+        } 
+        @media (max-width: 1388px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+        
+        #menu-inicial {
+        margin-left: 16%;
+        }  
+        #menu-inicial li{
+            padding: 18px;
+            }
+        }   
+        @media (max-width: 1384px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+        
+            #menu-inicial {
+            margin-left: 18%;
+            }  
+            #menu-inicial li{
+                padding: 16px;
+                }
+            }  
+            @media (max-width: 1381.60px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+        
+                #menu-inicial {
+                margin-left: 24%;
+                }  
+                #menu-inicial li{
+                    padding: 10px;
+                    }
+                }  
+      
+      @media (max-width: 1381.60px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+        
+      #menu-inicial {
+      margin-left: 20%;
+      }  
+      #menu-inicial li{
+      padding: 9px;  
+      }  
+      #menu-inicial .iconhotel{ 
+        top: -3%;
+      } 
+      #menu-inicial h1 { 
+        top: 2%;
+      }
+        } 
+        @media (max-width: 1384px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+                
+            #menu-inicial {
+            margin-left: 18%;  
+            padding: 1%;
+            }   
+             #menu-inicial li button{
+                padding: .70rem 1.10rem;
+            }
+                }
+      
+      @media screen and (max-width: 1215.20px) {  
+           #menu-inicial .iconhotel {  
+                right: 86%;
+                }  
+              }
+                @media (max-width: 1247.20px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+                
+                    #menu-inicial {
+                    margin-left: 19%; 
+                    }  
+                    #menu-inicial li{
+                    padding: 8px;  
+                     } 
+                     #menu-inicial li button{
+                        padding: .55rem 1.05rem; 
+                        font-size: 15px;
+                    }
+                        }
+            
+                
+                @media (max-width: 1192px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+                
+                #menu-inicial {
+                margin-left: 18%; 
+                }  
+                #menu-inicial li{
+                padding: 8px;  
+                } 
+                #menu-inicial li button{
+                padding: .55rem 1.05rem; 
+                font-size: 14px;
+                }
+              } 
+      @media (max-width: 1192px) { /* ADAPTAÇÃO DE SITE RESPONSIVO PROPORÇÃO 1366 */
+                
+      #menu-inicial {
+      margin-left: 18%; 
+      }  
+      #menu-inicial li{
+      padding: 8px;  
+      } 
+      #menu-inicial li button{
+      padding: .55rem 1.05rem; 
+      font-size: 14px;
+      }
+      } 
+                
+      @media screen and (max-width: 1138.40px) {  
+      
+      #menu-inicial {
+      margin-left: 19%;  
+      padding: 2%;
+        }  
+        #menu-inicial li{
+       padding: 5px;  
+        } 
+        #menu-inicial li button{
+       padding: .55rem 0.85rem; 
+       font-size: 14px;
+       }                          
+      }   
+      
+      @media screen and (max-width: 1071.20px) {  
+      
+      #menu-inicial {
+      margin-left: 20%;  
+      padding: 3%;
+      }   
+      
+      #menu-inicial h1 { 
+      font-size: 18px;
+      right: 84.5%; 
+      top: 2.5%; 
+      }   
+      
+      #menu-inicial .iconhotel {  
+      top: -3.5%; 
+      right: 84%; 
+      transform: scale(0.9);  
+      }  
+      
+      #menu-inicial li{
+      padding: 3px;  
+      } 
+      #menu-inicial li button{
+      padding: .45rem 0.85rem; 
+      font-size: 13px;
+      } 
+      }  
+      
+      @media screen and (max-width: 1032px) {  
+      
+      #menu-inicial {
+      margin-left: 21%;  
+      padding: 3%;
+      }   
+      #menu-inicial h1 { 
+      font-size: 18px;
+      right: 83%; 
+      top: 2%; 
+      }   
+      
+      #menu-inicial .iconhotel {  
+      top: -4%; 
+      right: 82%; 
+      transform: scale(0.9);  
+      } 
+      
+      #menu-inicial li{
+      padding: 2px;  
+      } 
+      #menu-inicial li button{
+      padding: .40rem 0.80rem; 
+      font-size: 12px;
+      } 
+      }  
+      
+      @media screen and (max-width: 968px) {  
+      
+      #menu-inicial {
+      margin-left: 20%;  
+      padding: 4%;
+      }   
+      
+      #menu-inicial h1 { 
+      font-size: 16px;
+      right: 83%; 
+      top: 3%; 
+      }   
+      
+      #menu-inicial .iconhotel {  
+      top: -3.5%; 
+      right: 82%; 
+      transform: scale(0.8);  
+      } 
+      
+      #menu-inicial li{
+      padding: 0px;  
+      } 
+      #menu-inicial li button{
+      padding: .35rem 0.75rem; 
+      font-size: 12px;
+      } 
+      }  
+      
+      @media screen and (max-width: 926.40px) {   
+      
+      #menu-inicial {
+      margin-left: 19%;  
+      padding: 4%;
+      }   
+      
+      #menu-inicial h1 { 
+      font-size: 16px;
+      right: 83%; 
+      top: 3%; 
+      }   
+      
+      #menu-inicial .iconhotel {  
+      top: -3.5%; 
+      right: 82%; 
+      transform: scale(0.8);  
+      } 
+      
+      #menu-inicial li{
+      padding: 0px;  
+      } 
+      #menu-inicial li button{
+      padding: .30rem 0.70rem; 
+      font-size: 12px;
+      }                        
+      } 
+      
+      @media screen and (max-width: 900px) {  
+      #menu-inicial h1 { 
+        font-size: 16px;
+        right: 83%; 
+        top: 3%; 
+        }   
+      
+      #menu-inicial .iconhotel {  
+      top: -3.5%; 
+      right: 82%; 
+      transform: scale(0.8);  
+      }
+      
+      #menu-inicial {
+      margin-left: 19%;  
+      padding: 4%;
+      }  
+      #menu-inicial li{
+      padding: 0px;  
+      } 
+      #menu-inicial li button{
+      padding: .30rem 0.60rem; 
+      font-size: 11px;
+      } 
+      } 
+      
+      @media screen and (max-width: 884px) {  /*RESOLUÇÃO PARA DISPOSITIVOS MOVEIS IPHONE 13 PRO MAX*/     
+      
+      #menu-inicial li button{ 
+      display: none;
+      }
+      
+      #menu-inicial h1{ 
+      top: 1%;  
+      left: 10%;   
+      font-size: 20px;
+      }  
+      .navbar{  
+      background-color: #f0f0f0; 
+      border-radius: 0px; 
+      margin: 0% 0% 0%;
+      border: 1px solid rgba(0, 0, 0, 0);  
+      } 
+      
+      #menu-inicial .iconhotel{ 
+      top: -2.5%; 
+      left: -4%;    
+      pointer-events: none;  
+      } 
+      #btn-menu { 
+      display: block;
+      }
+      }           
+        @media screen and (max-width: 835px) { 
+            #menu-inicial {
+            margin-left: 16%;  
+            padding: 5%;
+            }   
+        
+            #menu-inicial h1 { 
+                font-size: 14px;
+                right: 84%; 
+                top: 1%;  
+                font-size: larger;
+                }   
+        
+        #menu-inicial .iconhotel {  
+        top: -2%; 
+        right: 82%; 
+        transform: scale(0.8);  
+        }
+        
+            #menu-inicial li{
+            padding: 0px;  
+            } 
+            #menu-inicial li button{
+            padding: .35rem 0.50rem; 
+            font-size: 10px;
+            }    
+            }  
+      @media screen and (max-width: 800px) {
+      #menu-inicial h1{ 
+        top: 1%;  
+        left: 12%;   
+        font-size: 20px;
+        }   
+        #menu-inicial .iconhotel{ 
+            top: -2%; 
+            left: -4%;
+            pointer-events: none;   
+            transform: scale(0.9);
+            }  
+            }    
+      
+      @media screen and (max-width: 768px) { 
+        #menu-inicial .iconhotel { 
+            top: -2.7%; 
+        } 
+      }
+      @media screen and (max-width: 428px) {  /*RESOLUÇÃO PARA DISPOSITIVOS MOVEIS IPHONE 13 PRO MAX*/     
+        #btn-menu { 
+            margin-left: 80%; 
+            margin-top: 5%; 
+        }
+      #menu-inicial h1{ 
+      top: 3%;  
+      left: 16%;   
+      font-size: medium;
+      }  
+      #menu-inicial .iconhotel{ 
+      top: -2.5%; 
+      left: -9%;  
+      transform: scale(0.7);
+      } 
+      }       
+      @media screen and (max-width: 391px) { 
+      #menu-inicial .iconhotel{ 
+        top: -3%; 
+      } 
+      #menu-inicial h1{ 
+        top: 3.2%; 
+        left: 18%;
+      } 
+      } 
+      @media  screen and (max-width: 360px) {    
+      #menu-incial .iconhotel { 
+        top: -3%; 
+        transform: scale(0.6);
+      }  
+      #menu-incial h1 { 
+      top: -2%; 
+      font-size: small;
+      } 
+      }
+      @media  screen and (max-width: 320px) {     
+      #menu-inicial .iconhotel { 
+        top: -6%; 
+        transform: scale(0.7);
+      }  
+      #menu-inicial h1 { 
+      top: 6%;  
+      left: 22%;
+      font-size: small;
+      }
+      } 
