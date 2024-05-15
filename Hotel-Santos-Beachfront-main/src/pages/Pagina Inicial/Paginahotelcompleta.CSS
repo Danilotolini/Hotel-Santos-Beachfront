@@ -80,8 +80,11 @@ body {
         top: 87px; 
         left: 0; 
         width: 97.8%; 
-        height: 100%;    
-        z-index: 100; 
+        height: 0;    
+        z-index: 100;  
+        visibility: hidden; 
+        transition: 0.5s; 
+        overflow: hidden;
         } 
     #menu-mobile li button {  
         color: #f0f0f0; 
@@ -110,11 +113,12 @@ body {
         margin-left: 90%;
         width: 70px; 
         height: 70px; 
-        border: 4px solid #ccc; 
+        border: 3px solid #ccc; 
         background: transparent;  
         border-radius: 20px;
         z-index: 100; 
         cursor: pointer;    
+        display: none;
     } 
     .linha { 
         width: 40px; 
@@ -123,18 +127,30 @@ body {
         display: block; 
         margin: 7px auto; 
         position: relative; 
-        transform-origin: center; 
+        transform-origin: center;  
+        transition: 0.2s;
         cursor: pointer;  
         z-index: 100;
+    }  
+    #btn-menu.ativar { 
+        border: 3px solid red;
     } 
+
     button.ativar .linha:nth-child(1){ 
-         transform: translateY(36px) rotate(-45deg);  
-         background-color: red;   
+    transform: translateY(12px) rotate(-45deg);  
+    background-color: red;   
         } 
-        button.ativar .linha:nth-child(3){ 
-            transform: translateY(-36px) rotate(45deg);  
-            background-color: red;   
-           }
+     button.ativar .linha:nth-child(3){ 
+     transform: translateY(-10px) rotate(45deg);  
+    background-color: red;   
+    } 
+    button.ativar .linha:nth-child(2){ 
+        width: 0;
+    } 
+    #menu-mobile.abrir { 
+        visibility: visible; 
+        height: calc(100vh - 77px);
+    }
     .imagem1 { 
         position: flex;  
         right: 0%;      
@@ -1015,6 +1031,9 @@ text-align: center; /* Alinhamento de texto centralizado */
   min-height: calc(30px + 12px);
   border: 2px solid #00c8ff;
 }  
+#btn-menu { 
+    display: block;
+}
 }           
         @media screen and (max-width: 835px) { 
             #menu-inicial {
