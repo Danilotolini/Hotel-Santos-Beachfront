@@ -1005,7 +1005,10 @@ text-align: center; /* Alinhamento de texto centralizado */
     #maps .linha-separadora {
         margin: 1700px 0 0 ; /* Ajuste conforme necessário */ 
         width: 100%;
-    }   
+    }    
+    .imagem1 { 
+        margin-top: -10%;    
+        } 
     .extra-space {
         height: 5px; /* Altura desejada para o espaço extra */
      }  
@@ -1098,7 +1101,13 @@ text-align: center; /* Alinhamento de texto centralizado */
         }
     }
      @media screen and (max-width: 428px) {  /*RESOLUÇÃO PARA DISPOSITIVOS MOVEIS IPHONE 13 PRO MAX*/     
-        
+        #btn-menu { 
+            margin-left: 80%; 
+            margin-top: 5%;
+        } 
+        .imagem1 { 
+        margin-top: -18%;    
+        } 
         .option h2 {
             font-size: 26px;
         } 
